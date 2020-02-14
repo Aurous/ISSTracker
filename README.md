@@ -13,7 +13,7 @@ The tracking api utilizes [Open Notify](http://api.open-notify.org/), an [open s
 
 >Using the astronauts name then filtering the search for portrait in the description of the data returns the images that show the astronauts.
 ______
-React JS Frameworks used:
+React JS Frameworks Used:
 -----
 
 [React](https://www.npmjs.com/package/react) - Main javascript framework
