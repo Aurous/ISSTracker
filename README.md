@@ -3,15 +3,15 @@ International Space Station Tracker
 
 The tracking api utilizes [Open Notify](http://api.open-notify.org/), an [open source](https://github.com/open-notify/Open-Notify-API) project that drive two of the apis in this project.
 
-[ISS-Location-Now](http://open-notify.org/Open-Notify-API/ISS-Location-Now/) returns the current location of the International Space Station in latitude and longitude.
+>[ISS-Location-Now](http://open-notify.org/Open-Notify-API/ISS-Location-Now/) returns the current location of the International Space Station in latitude and longitude.
 
 
-[People-In-Space](http://open-notify.org/Open-Notify-API/People-In-Space/) returns everyone who is currently in space with their name and what craft they are on.
+>[People-In-Space](http://open-notify.org/Open-Notify-API/People-In-Space/) returns everyone who is currently in space with their name and what craft they are on.
 
 
-The photos of the astronauts is being provided by NASA's Api [NASA Image and Video Library](https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf)
+>The photos of the astronauts is being provided by NASA's Api [NASA Image and Video Library](https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf)
 
-Using the astronauts name then filtering the search for portrait in the description of the data returns the images that show the astronauts.
+>Using the astronauts name then filtering the search for portrait in the description of the data returns the images that show the astronauts.
 ______
 React JS Frameworks used:
 -----
