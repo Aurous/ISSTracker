@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { Typography, Grid, Card, CardMedia, CardContent, CardActions, IconButton} from '@material-ui/core'
+import React, { Component } from 'react';
+import { Typography, Grid, Card, CardMedia, CardContent, CardActions, IconButton} from '@material-ui/core';
 import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
-import Airplane from '../imgs/airplane.png'
+import Airplane from '../imgs/airplane.png';
 
 class PeopleInSpaceItem extends Component {
   _isMounted = false;
@@ -22,7 +22,7 @@ class PeopleInSpaceItem extends Component {
       let urls = data.collection.items.map((item)=>{
         return item.links[0].href;
       })
-      this.setState({urls:urls})
+      this.setState({urls:urls});
     }).catch(console.log);
   }
 
@@ -39,8 +39,6 @@ class PeopleInSpaceItem extends Component {
   // Load Airplane photo when getting api data then load urls base on index
   getPhoto(){
     if(this.state.urls){
-			console.log(this.state.photoIndex);
-			console.log(Object.keys(this.state.urls).length-1);
       return this.state.urls[this.state.photoIndex];
     }else{
       return Airplane;

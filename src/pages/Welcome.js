@@ -1,12 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Container, Link, Typography } from '@material-ui/core';
 
 class Welcome extends Component {
   constructor (props) {
     super(props)
-
     this.state = {
-
     }
   }
 
@@ -32,7 +30,7 @@ class Welcome extends Component {
           Using the astronauts name then filtering the search for portrait in the description of the data returns the images that show the astronauts.
         </Typography><br /><br />
         <Typography variant="h5">
-          React JS Frameworks used:
+          React JS Frameworks Used:
         </Typography><br />
         <Typography variant="body1" style={{marginLeft:'30px'}}>
           <Link href="https://www.npmjs.com/package/react" color="secondary">React</Link> - Main javascript framework

@@ -1,6 +1,6 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { AppBar, Toolbar, Typography, MenuItem } from '@material-ui/core'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { AppBar, Toolbar, Typography, MenuItem } from '@material-ui/core';
 
 class Navbar extends React.Component {
   render() {

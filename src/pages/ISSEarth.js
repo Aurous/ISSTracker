@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
-import Image from 'material-ui-image'
+import Image from 'material-ui-image';
 import worldMap from '../imgs/world_map.png';
 import astronaut from '../imgs/astronaut.png';
 
