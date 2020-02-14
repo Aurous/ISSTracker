@@ -55,7 +55,9 @@ class ISSEarth extends Component {
       color: 'white',
       top: `${this.state.iss_position.x}px`,
       left: `${this.state.iss_position.y}px`,
-    }
+			height:'5%',
+			width:'4%',
+		}
 
     return (
 			<Container>
@@ -65,7 +67,7 @@ class ISSEarth extends Component {
         <div style={{position:'relative'}} >
 					<Image id="worldMap" src={worldMap} aspectRatio={(16/9)} color='#303030' />
           <div style={ISSIconStyle} >
-            <img id="issIcon" alt="ISS" src={astronaut} style={{width:'10%', height:'10%'}}/>
+            <img id="issIcon" alt="ISS" src={astronaut} style={{position: 'absolute', width:'100%', height:'100%'}}/>
           </div>
         </div>
 				</Grid>
