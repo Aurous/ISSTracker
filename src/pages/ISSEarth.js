@@ -55,8 +55,8 @@ class ISSEarth extends Component {
       color: 'white',
       top: `${this.state.iss_position.x}px`,
       left: `${this.state.iss_position.y}px`,
-			height:'5%',
-			width:'4%',
+			height:'4%',
+			width:'3%',
 		}
 
     return (

@@ -13,6 +13,11 @@ class Navbar extends React.Component {
                 <Typography variant="h6" color="inherit">ISSTracker</Typography>
               </MenuItem>
             </NavLink>
+						<NavLink to='/' style={headerStyle}>
+              <MenuItem>
+                <Typography variant="subtitle2" color="inherit">Welcome</Typography>
+              </MenuItem>
+            </NavLink>
             <NavLink to='/iss' style={headerStyle}>
               <MenuItem>
                 <Typography variant="subtitle2" color="inherit">Tracker</Typography>
