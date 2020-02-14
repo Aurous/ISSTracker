@@ -10,6 +10,7 @@ class PeopleInSpaceItem extends Component {
     super(props)
     this.state = {
       photoIndex:0,
+			urls:[],
     }
 
     this.getPortraitPhotos(this.props.person.name);
@@ -27,7 +28,7 @@ class PeopleInSpaceItem extends Component {
 
   // check that the next photo is not going to be out of the limit then add or move to zero
   nextPhoto(){
-      this.setState({photoIndex: (Object.keys(this.state.urls).length !== (this.state.photoIndex+1))?this.state.photoIndex + 1:0});
+      this.setState({photoIndex: ((Object.keys(this.state.urls).length-1) !== (this.state.photoIndex))?this.state.photoIndex + 1:0});
   }
 
   // check that the previous photo is not going to be out of limit then subtract or move to last object length
@@ -38,6 +39,8 @@ class PeopleInSpaceItem extends Component {
   // Load Airplane photo when getting api data then load urls base on index
   getPhoto(){
     if(this.state.urls){
+			console.log(this.state.photoIndex);
+			console.log(Object.keys(this.state.urls).length-1);
       return this.state.urls[this.state.photoIndex];
     }else{
       return Airplane;
@@ -61,6 +64,9 @@ class PeopleInSpaceItem extends Component {
                 <IconButton aria-label="Previous" onClick={()=>{this.prevPhoto()}} >
                   <ArrowBackIosRoundedIcon />
                 </IconButton>
+              </Grid>
+							<Grid item xs >
+								<Typography align="center">{this.state.photoIndex+1}/{Object.keys(this.state.urls).length}</Typography>
               </Grid>
               <Grid item xs>
                 <IconButton style={{float:'right'}} aria-label="Next" onClick={()=>{this.nextPhoto()}} >
